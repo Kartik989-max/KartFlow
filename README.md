@@ -1,8 +1,127 @@
-# Getting Started with Create React App
+# E-commerce Kafka System - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern React frontend for the E-commerce Kafka System, providing a comprehensive user interface for managing products, orders, and inventory in real-time.
 
-## Available Scripts
+## 🚀 Features
+
+### 📊 Dashboard
+- **Real-time Analytics**: Order statistics and inventory metrics
+- **Interactive Charts**: Pie charts for order status distribution, bar charts for inventory overview
+- **Key Performance Indicators**: Total orders, revenue, inventory alerts
+- **System Overview**: Quick insights into system performance
+
+### 📦 Product Management
+- **Product Catalog**: Grid view of all products with search functionality
+- **CRUD Operations**: Create, read, update, and delete products
+- **Stock Monitoring**: Real-time stock level indicators
+- **Product Details**: Comprehensive product information with SKU tracking
+
+### 🛒 Order Management
+- **Order Dashboard**: Complete order listing with status tracking
+- **Order Creation**: Interactive order builder with product selection
+- **Order Details**: Comprehensive order view with item breakdown
+- **Status Management**: Update order status with workflow validation
+- **Order Tracking**: Timeline view of order progression
+
+### 📋 Inventory Management
+- **Real-time Stock Tracking**: Live inventory levels and availability
+- **Stock Movements**: Track all inventory transactions
+- **Low Stock Alerts**: Visual indicators for items requiring restocking
+- **Bulk Operations**: Update stock levels with movement tracking
+- **Location Management**: Track inventory across different locations
+
+## 🛠️ Technology Stack
+
+- **React 18**: Modern React with functional components and hooks
+- **Material-UI (MUI)**: Professional UI component library
+- **React Router**: Client-side routing for single-page application
+- **Axios**: HTTP client for API communication
+- **Recharts**: Beautiful, composable charts for analytics
+- **React Toastify**: Elegant notification system
+
+## 📁 Project Structure
+
+```
+src/
+├── components/           # Reusable UI components
+│   └── Layout/
+│       └── Navbar.js    # Navigation component
+├── pages/               # Page components
+│   ├── Dashboard.js     # Analytics dashboard
+│   ├── Products.js      # Product management
+│   ├── Orders.js        # Order listing
+│   ├── OrderDetails.js  # Order detail view
+│   ├── CreateOrder.js   # Order creation
+│   └── Inventory.js     # Inventory management
+├── services/            # API service layer
+│   ├── api.js          # Axios configuration
+│   └── ecommerceApi.js # API service methods
+├── App.js              # Main application component
+└── index.js            # Application entry point
+```
+
+## 🚦 Getting Started
+
+### Prerequisites
+- Node.js 14.x or higher
+- npm or yarn package manager
+- Backend Django server running on http://localhost:8000
+
+### Installation
+
+1. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+2. **Start development server**
+   ```bash
+   npm start
+   ```
+
+3. **Access the application**
+   - Frontend: http://localhost:3000
+   - Backend API: http://localhost:8000
+
+## 🔧 Configuration
+
+### API Configuration
+The frontend is configured to communicate with the Django backend API. Update the API base URL in `src/services/api.js` if needed:
+
+```javascript
+const API_BASE_URL = 'http://localhost:8000/api';
+```
+
+## 📱 Key Features Walkthrough
+
+### 1. Dashboard Analytics
+- **Order Distribution**: Visual representation of order statuses
+- **Inventory Overview**: Stock levels and alerts
+- **Revenue Tracking**: Real-time financial metrics
+- **System Health**: Quick overview of system performance
+
+### 2. Product Management
+- **Add New Products**: Form-based product creation
+- **Edit Products**: In-place editing with validation
+- **Stock Checking**: Real-time availability verification
+- **Search & Filter**: Find products quickly by name or SKU
+
+### 3. Order Processing
+- **Create Orders**: Interactive order builder
+  - Product selection with autocomplete
+  - Quantity management with stock validation
+  - Shipping address collection
+  - Real-time total calculation
+- **Order Tracking**: Complete order lifecycle management
+- **Status Updates**: Workflow-based status transitions
+
+### 4. Inventory Control
+- **Stock Movements**: Track all inventory changes
+- **Movement Types**: In, Out, Reserved, Released, Adjustment
+- **Low Stock Alerts**: Visual indicators for restocking needs
+- **Batch Updates**: Efficient stock level management
+
+## 📊 Available Scripts
 
 In the project directory, you can run:
 
@@ -26,8 +145,6 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `npm run eject`
 
