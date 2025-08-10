@@ -1,6 +1,6 @@
-# E-commerce Kafka System - Frontend
+# KartFlow - Frontend
 
-A modern React frontend for the E-commerce Kafka System, providing a comprehensive user interface for managing products, orders, and inventory in real-time.
+A modern React frontend for the KartFlow, providing a comprehensive user interface for managing products, orders, and inventory in real-time.
 
 ## 🚀 Features
 
